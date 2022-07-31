@@ -3,7 +3,7 @@ import './Welcome.scss';
 
 import Text from '../../atoms/text/Text';
 
-import CinnySvg from '../../../../public/res/svg/cinny.svg';
+import CinnySvg from '../../../../public/res/svg/nexus-icon.png';
 
 function Welcome() {
   return (

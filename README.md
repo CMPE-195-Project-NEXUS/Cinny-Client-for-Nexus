@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/ajbura/cinny/dev/public/res/svg/cinny.svg?sanitize=true"
+    <img src="https://raw.githubusercontent.com/ajbura/cinny/dev/public/res/svg/nexus-icon.png?sanitize=true"
         height="16">
     <span><b>Cinny</b></span>
 </p>
