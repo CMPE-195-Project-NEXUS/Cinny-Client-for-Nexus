@@ -66,7 +66,7 @@ function AppearanceSection() {
                 { text: 'Light' },
                 { text: 'Silver' },
                 { text: 'Dark' },
-                { text: 'Nexus' },
+                { text: 'Butter' },
               ]}
               onSelect={(index) => {
                 if (settings.useSystemTheme) toggleSystemTheme();
