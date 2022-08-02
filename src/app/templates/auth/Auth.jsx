@@ -112,39 +112,6 @@ function Homeserver({ onChange }) {
 
   return (
     <>
-      <div className="homeserver-form">
-        <Input
-          name="homeserver"
-          onChange={handleHsInput}
-          value={hs?.selected}
-          forwardRef={hsRef}
-          label="Homeserver"
-          disabled={hs === null || !hs.allowCustom}
-        />
-        <ContextMenu
-          placement="right"
-          content={(hideMenu) => (
-            <>
-              <MenuHeader>Homeserver list</MenuHeader>
-              {
-                hs?.list.map((hsName) => (
-                  <MenuItem
-                    key={hsName}
-                    onClick={() => {
-                      hideMenu();
-                      hsRef.current.value = hsName;
-                      setHs({ ...hs, selected: hsName });
-                    }}
-                  >
-                    {hsName}
-                  </MenuItem>
-                ))
-              }
-            </>
-          )}
-          render={(toggleMenu) => <IconButton onClick={toggleMenu} src={ChevronBottomIC} />}
-        />
-      </div>
       {process.error !== undefined && <Text className="homeserver-form__error" variant="b3">{process.error}</Text>}
       {process.isLoading && (
         <div className="homeserver-form__status flex--center">
@@ -578,6 +545,12 @@ function Auth() {
 
           <Text variant="b2">
             <a href="https://matrix.org" target="_blank" rel="noreferrer">Powered by Matrix</a>
+          </Text>
+          <Text variant="b2">
+            <a href="https://www.sjsu.edu" target="_blank" rel="noreferrer">San Jose State University</a>
+          </Text>
+          <Text variant="b2">
+            <a href="https://github.com/CMPE-195-Project-NEXUS" target="_blank" rel="noreferrer">CMPE 195 Senior Project GitHub</a>
           </Text>
         </div>
       </div>
