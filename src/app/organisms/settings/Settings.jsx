@@ -231,11 +231,11 @@ function AboutSection() {
           <ul>
             <li>
               {/* eslint-disable-next-line react/jsx-one-expression-per-line */ }
-              <Text>The <a href="https://sites.google.com/sjsu.edu/mahima-agumbe-suresh" rel="noreferrer noopener" target="_blank">Prof. Mahima Agumbe Suresh</a> - Our senior advisor for this project and an invaluable resource for guidence on creating this messaging experience.</Text>
+              <Text><a href="https://sites.google.com/sjsu.edu/mahima-agumbe-suresh" rel="noreferrer noopener" target="_blank">Prof. Mahima Agumbe Suresh</a> - Our senior advisor for this project and an invaluable resource for guidence on creating this messaging experience.</Text>
             </li>
             <li>
               {/* eslint-disable-next-line react/jsx-one-expression-per-line */ }
-              <Text>The <a href="https://github.com/ajbura/cinny" rel="noreferrer noopener" target="_blank">Ajay Bura</a> - The creator of the Cinny messaging client we've extended to use with the Matrix platform and the backend server we created.</Text>
+              <Text><a href="https://github.com/ajbura/cinny" rel="noreferrer noopener" target="_blank">Ajay Bura</a> - The original creator of the Cinny messaging client we've extended to use with the Matrix platform and the backend server we created.</Text>
             </li>
             <li>
               {/* eslint-disable-next-line react/jsx-one-expression-per-line */ }
