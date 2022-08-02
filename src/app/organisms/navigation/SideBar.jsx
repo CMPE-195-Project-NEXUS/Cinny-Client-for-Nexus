@@ -90,21 +90,6 @@ function ProfileAvatarMenu() {
   );
 }
 
-function CrossSigninAlert() {
-  const deviceList = useDeviceList();
-  const unverified = deviceList?.filter((device) => isCrossVerified(device.device_id) === false);
-
-  if (!unverified?.length) return null;
-
-  return (
-    <SidebarAvatar
-      className="sidebar__cross-signin-alert"
-      tooltip={`${unverified.length} unverified sessions`}
-      onClick={() => openSettings(settingTabText.SECURITY)}
-      avatar={<Avatar iconSrc={ShieldUserIC} iconColor="var(--ic-danger-normal)" size="normal" />}
-    />
-  );
-}
 
 function FeaturedTab() {
   const { roomList, accountData, notifications } = initMatrix;
@@ -353,12 +338,6 @@ function SideBar() {
             </div>
             <div className="sidebar-divider" />
             <div className="space-container">
-              <SpaceShortcut />
-              <SidebarAvatar
-                tooltip="Pin spaces"
-                onClick={() => openShortcutSpaces()}
-                avatar={<Avatar iconSrc={AddPinIC} size="normal" />}
-              />
             </div>
           </div>
         </ScrollView>
@@ -379,7 +358,6 @@ function SideBar() {
               notificationBadge={<NotificationBadge alert content={totalInvites} />}
             />
           )}
-          <CrossSigninAlert />
           <ProfileAvatarMenu />
         </div>
       </div>
