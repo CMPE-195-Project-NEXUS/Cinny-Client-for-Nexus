@@ -259,7 +259,6 @@ function AboutSection() {
 export const tabText = {
   APPEARANCE: 'Appearance',
   NOTIFICATIONS: 'Notifications',
-  SECURITY: 'Security',
   ABOUT: 'About',
 };
 const tabItems = [{
@@ -272,11 +271,6 @@ const tabItems = [{
   iconSrc: BellIC,
   disabled: false,
   render: () => <NotificationsSection />,
-}, {
-  text: tabText.SECURITY,
-  iconSrc: LockIC,
-  disabled: false,
-  render: () => <SecuritySection />,
 }, {
   text: tabText.ABOUT,
   iconSrc: InfoIC,
