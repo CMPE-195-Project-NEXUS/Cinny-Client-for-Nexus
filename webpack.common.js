@@ -53,7 +53,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: './public/index.html' }),
     new FaviconsWebpackPlugin({
-      logo: 'https://cdn.discordapp.com/attachments/936339443361665066/1001342470002581615/nexus-icon.png',
+      logo: '/nexus-icon.png',
       mode: 'webapp',
       devMode: 'light',
       favicons: {
