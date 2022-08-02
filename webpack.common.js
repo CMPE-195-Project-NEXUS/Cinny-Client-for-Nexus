@@ -53,7 +53,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: './public/index.html' }),
     new FaviconsWebpackPlugin({
-      logo: '/nexus-icon.png',
+      logo: 'nexus-icon.png',
       mode: 'webapp',
       devMode: 'light',
       favicons: {
