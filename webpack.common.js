@@ -53,13 +53,13 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: './public/index.html' }),
     new FaviconsWebpackPlugin({
-      logo: './public/res/svg/cinny.svg',
+      logo: '.public/res/svg/nexus-icon.png',
       mode: 'webapp',
       devMode: 'light',
       favicons: {
-        appName: 'Cinny',
-        appDescription: 'Yet another matrix client',
-        developerName: 'Ajay Bura',
+        appName: 'Nexus',
+        appDescription: 'A unified messaging aggregate',
+        developerName: 'Powered by Cinny from Ajay Bura',
         developerURL: 'https://github.com/ajbura',
         icons: {
           coast: false,
