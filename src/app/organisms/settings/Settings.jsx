@@ -215,11 +215,12 @@ function AboutSection() {
               Cinny
               <span className="text text-b3" style={{ margin: '0 var(--sp-extra-tight)' }}>{`v${cons.version}`}</span>
             </Text>
-            <Text>Yet another matrix client</Text>
+            <Text>Yet another matrix client (Modified for use with Project Nexus)</Text>
 
             <div className="settings-about__btns">
-              <Button onClick={() => window.open('https://github.com/ajbura/cinny')}>Source code</Button>
-              <Button onClick={() => window.open('https://cinny.in/#sponsor')}>Support</Button>
+              <Button onClick={() => window.open('https://github.com/ajbura/cinny')}>Original Source code</Button>
+              <Button onClick={() => window.open('https://cinny.in/#sponsor')}>Support Cinny Development</Button>
+              <Button onClick={() => window.open('https://github.com/CMPE-195-Project-NEXUS')}>Project Nexus</Button>
             </div>
           </div>
         </div>
@@ -228,6 +229,14 @@ function AboutSection() {
         <MenuHeader>Credits</MenuHeader>
         <div className="settings-about__credits">
           <ul>
+            <li>
+              {/* eslint-disable-next-line react/jsx-one-expression-per-line */ }
+              <Text>The <a href="https://sites.google.com/sjsu.edu/mahima-agumbe-suresh" rel="noreferrer noopener" target="_blank">Prof. Mahima Agumbe Suresh</a> - Our senior advisor for this project and an invaluable resource for guidence on creating this messaging experience.</Text>
+            </li>
+            <li>
+              {/* eslint-disable-next-line react/jsx-one-expression-per-line */ }
+              <Text>The <a href="https://github.com/ajbura/cinny" rel="noreferrer noopener" target="_blank">Ajay Bura</a> - The creator of the Cinny messaging client we've extended to use with the Matrix platform and the backend server we created.</Text>
+            </li>
             <li>
               {/* eslint-disable-next-line react/jsx-one-expression-per-line */ }
               <Text>The <a href="https://github.com/matrix-org/matrix-js-sdk" rel="noreferrer noopener" target="_blank">matrix-js-sdk</a> is © <a href="https://matrix.org/foundation" rel="noreferrer noopener" target="_blank">The Matrix.org Foundation C.I.C</a> used under the terms of <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="noreferrer noopener" target="_blank">Apache 2.0</a>.</Text>
